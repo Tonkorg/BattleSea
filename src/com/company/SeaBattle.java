@@ -52,9 +52,7 @@ public class SeaBattle {
             }
 
         }
-        int p = game.getTarget1();
-        int o = game.getTarget2();
-        int u = game.getTarget3();
+
             for (int j = 0; j < 100; j++) {
                 System.out.println("Введите клетку");
                 if (q&&w&&e) {
@@ -62,16 +60,16 @@ public class SeaBattle {
                     break;
                 }
                 int first = in.nextInt();
-                if (first==p)
+                if (first== game.getTarget1())
                 {
                     q = true;
                     System.out.println("Есть пробитие");
                 }
-                else if (first == o) {
+                else if (first == game.getTarget2()) {
                     w = true;
                     System.out.println("Есть пробитие");
                 }
-                else if (first == u) {
+                else if (first == game.getTarget3()) {
                     e = true;
                     System.out.println("Есть пробитие");
                 }
